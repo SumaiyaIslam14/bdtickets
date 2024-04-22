@@ -157,12 +157,14 @@
 }
 .upper-sec{
     background-color: white;
-    height: 30px;
-    width: 50vw;
+    height: 70px;
+    width: 40vw;
     margin-left: 50px;
     align-items: center;
     justify-content: center;
     display: flex;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 .header-items{
     
@@ -185,7 +187,20 @@
 .bus-text{
     color: white;
     background-color: #E30A13;
+    border: none;
 }
 .air-head{
     background-image: url(items/nair.png);
+}
+.ship-head{
+    background-image: url(items/nship.png);
+}
+.hotel-head{
+    background-image: url(items/nbed.png);
+}
+.btn-head{
+    padding: 7px 30px 7px 30px;
+    border: 1px #f9151d solid;
+    display: flex;
+    justify-content: center;
 }
