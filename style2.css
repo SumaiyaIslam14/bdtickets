@@ -356,3 +356,113 @@ img {
 .bdt-search-wrapper .bdt-search-form .bdt-input-wrapper.has-btn-swipe {
     position: relative;
 }
+.bdt-date-picker .ant-picker>.ant-picker-input:first-child::before {
+    content: "JOURNEY DATE";
+    position: absolute;
+    top: 0;
+    left: 25px;
+    font-size: 10px;
+    display: block;
+    text-transform: capitalize;
+    color: #666;
+    font-weight: 500;
+    pointer-events: inherit;
+}
+.bdt-date-picker .ant-picker>.ant-picker-input input, .bdt-date-picker .ant-picker>.ant-picker-input input::placeholder {
+    color: #000 !important;
+    font-weight: 500;
+    padding-top: 16px;
+}
+.ant-picker-input>input:placeholder-shown {
+    text-overflow: ellipsis;
+}
+.ant-picker-input input {
+    margin: 0;
+}
+.bdt-date-picker .ant-picker .ant-picker-range-separator {
+    width: 2px;
+    height: 100%;
+    border-radius: 0 !important;
+    padding: 0 !important;
+}
+.bdt-date-picker .ant-picker .ant-picker-range-separator{
+    border-right: 1px solid rgba(227, 11, 19, .4);
+}
+.ant-picker-separator {
+    position: relative;
+    display: inline-block;
+    width: 1em;
+    height: 16px;
+    color: rgba(0, 0, 0, .25);
+    font-size: 16px;
+    vertical-align: top;
+    cursor: default;
+}
+.anticon {
+    display: inline-flex;
+    align-items: center;
+    color: inherit;
+    font-style: normal;
+    line-height: 0;
+    text-align: center;
+    text-transform: none;
+    vertical-align: -.125em;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.bdt-date-picker .ant-picker>.ant-picker-input:nth-child(3)::before {
+    content: "RETURN DATE";
+    position: absolute;
+    top: 0;
+    left: 25px;
+    font-size: 10px;
+    display: block;
+    text-transform: capitalize;
+    color: #666;
+    font-weight: 500;
+    pointer-events: inherit;
+}
+.bdt-date-picker .ant-picker>.ant-picker-input {
+    position: relative;
+    padding-left: 25px !important;
+    padding-right: 15px !important;
+}
+.ant-picker-input {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 22px;
+}
+.bdt-date-picker .ant-picker>.ant-picker-input input, .bdt-date-picker .ant-picker>.ant-picker-input input::placeholder {
+    color: #000 !important;
+    font-weight: 500;
+    padding-top: 16px;
+}
+.ant-picker-input>input[disabled] {
+    background: transparent;
+}
+.ant-picker-input>input[disabled] {
+    color: rgba(0, 0, 0, .25);
+    background-color: #f5f5f5;
+    border-color: #d9d9d9;
+    box-shadow: none;
+    cursor: not-allowed;
+    opacity: 1;
+}
+.ant-picker-input>input:placeholder-shown {
+    text-overflow: ellipsis;
+}
+.bdt-date-picker .ant-picker .ant-picker-active-bar, .bdt-date-picker .ant-picker .ant-picker-suffix {
+    display: none;
+}
+.ant-picker-range .ant-picker-active-bar {
+    bottom: -1px;
+    height: 2px;
+    margin-left: 11px;
+    background: #1890ff;
+    opacity: 0;
+    transition: all .3s ease-out;
+    pointer-events: none;
+}
