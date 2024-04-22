@@ -353,3 +353,6 @@ img {
     padding: 11px !important;
     width: 100%;
 }
+.bdt-search-wrapper .bdt-search-form .bdt-input-wrapper.has-btn-swipe {
+    position: relative;
+}
