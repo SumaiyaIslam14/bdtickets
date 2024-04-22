@@ -1,0 +1,188 @@
+.bg{
+    margin: 0;
+    padding: 0;
+    background: url(items/banner-web.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* icons */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 70px 10px 70px;
+    align-items: center;
+    background-color: #faebd760;
+    box-shadow: 0px 5px 5px rgba(101, 101, 101, 0.425);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.options{
+    justify-content: space-between;
+    padding: 2px;
+    gap: 30px;
+}
+.btn-icon{
+    border: none;
+    background: none;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 2px 15px 2px 15px;
+}
+.btn-icon:hover{
+    color: #E30A13;
+}
+.b-icon{
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bus-icon{
+    background-image: url(items/nbus.png);
+}
+.bus-icon:hover,
+.bus-icon:focus{
+    background-image: url(items/nbus2.png);
+}
+
+.air-icon{
+    background-image: url(items/nair.png);
+}
+.air-icon:hover,
+.air-icon:focus{
+    background-image: url(items/nair2.png);
+}
+
+.ship-icon{
+    background-image: url(items/nship.png);
+}
+.ship-icon:hover,
+.ship-icon:focus{
+    background-image: url(items/nship2.png);
+}
+
+.hotel-icon{
+    background-image: url(items/nbed.png);
+}
+.hotel-icon:hover,
+.hotel-icon:focus{
+    background-image: url(items/nbed2.png);
+}
+
+.flash-icon{
+    background-image: url(items/nflash.png);
+}
+.flash-icon:hover,
+.flash-icon:focus{
+    background-image: url(items/nflash2.png);
+}
+
+/* call */
+
+.btn-box{
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+    gap: 20px;
+}
+.call{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 10px 4px 10px;
+    gap: 15px;
+    background-color: #E30A13;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    height: 35px;
+    width: 130px;
+}
+.call:hover{
+    background-color: #f9151d;
+}
+
+/* booking */
+.booking{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 10px 4px 10px;
+    gap: 15px;
+    border: 2px;
+    background-color: #faebd760;
+    border-radius: 8px;
+    border-color: #E30A13;
+    border-style: solid;
+    color: #E30A13;
+    cursor: pointer;
+    height: 35px;
+    width: 130px;
+}
+
+/* user */
+.user{
+    color: #000000b2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 4px 4px 4px;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.round{
+    border-style: solid;
+    border-color: #000000b2;
+    border-radius: 40px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+/* header */
+.header-icon-text{
+    margin-top: 60px;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.upper-sec{
+    background-color: white;
+    height: 30px;
+    width: 50vw;
+    margin-left: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.header-items{
+    
+}
+.b-head{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bus-head{
+    background-image: url(items/whitebus.png);
+}
+.bus-head:hover,
+.bus-head:focus{
+    background-image: url(items/nbus.png);
+}
+.bus-text{
+    color: white;
+    background-color: #E30A13;
+}
