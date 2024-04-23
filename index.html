@@ -4,150 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg">
-    <div id="benner">
-        <section class="btn-head">
-            <div class="bdt-search-inner">
-                <ul class="bdt-search-types">
+<body>
+    <div>
+        <div id="hero" class="bg-cover bg-no-repeat">
+          <section class="bdt_search py-20 mx-auto">
+            <div class="bdt_search_inner">
+              <ul class="bdt_search_types">
+                <li>
+                  <button class="active">
+                    <img src="svg/bus.svg" alt="Bus icon" />
+                    BUS
+                  </button>
+                </li>
+                <li>
+                  <button class="">
+                    <img src="svg/air.svg" alt="Air icon" />
+                    AIR
+                  </button>
+                </li>
+                <li>
+                  <button class="">
+                    <img src="svg/ship.svg" alt="Ship icon" />
+                    SHIP
+                  </button>
+                </li>
+                <li>
+                  <button class="">
+                    <img src="svg/hotel.svg" alt="S
+                    Hotel icon" />
+                    HOTEL
+                  </button>
+                </li>
+              </ul>
+              <div class="bdt_search_wrapper">
+                <div class="bdt_search_form">
+                  <div class="bdt_input_wrapper relative bg-white">
+                    <div class="bdt_input relative">
+                      <div>
+                        <span class="bdt_input_label">Going From</span>
+                        <span class="bdt_input_value" id="input1">
+                          search name here
+                        </span>
+                      </div>
+                    </div>
+                    <div class="bdt_input relative">
+                      <div>
+                        <span class="bdt_input_label">Going To</span>
+                        <span class="bdt_input_value" id="input2">
+                          search name here
+                        </span>
+                      </div>
+                    </div>
+                    <button class="btn_swipe" onClick={handleSwipeClick}>
+                      <img
+                        src="svg/swip.svg"
+                        class="scheme-secondary"
+                        alt="icon"
+                      />
+                    </button>
+                  </div>
+  
+                  <div class="bdt_input_wrapper relative bg-white">
+                    <div class="bdt_input relative">
+                      <div>
+                        <span class="bdt_input_label">Date</span>
+                        <input type="date" name="" id="tota_date" />
+                      </div>
+                    </div>
+                    <div class="bdt_input relative">
+                      <div class="cursor-not-allowed opacity-50">
+                        <span class="bdt_input_label">Return Date</span>
+                        <span class="bdt_input_value">Pleaseselect</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="bdt-trending-search pl-5">
+                  <span class="font-medium mr-4">Trending Searches:</span>
+                  <ul class="list-route">
                     <li>
-                        <button style="font-weight:bold" class="active">
-                            <img src="svg/bus.svg" alt="icon">
-                            BUS
-                        </button>
+                        <a style="cursor:pointer">
+                            <ul class="list-route-card">
+                                <li>
+                                    dhaka
+                                </li>
+                                <li>rajshahi</li>
+                            </ul>
+                        </a>
                     </li>
                     <li>
-                        <button style="font-weight:bold">
-                            <img src="svg/air.svg" alt="icon">
-                            AIR
-                        </button>
+                        <a style="cursor:pointer">
+                            <ul class="list-route-card">
+                                <li>Chattagang</li>
+                                <li>barisal</li>
+                            </ul>
+                        </a>
                     </li>
                     <li>
-                        <button style="font-weight:bold">
-                            <img src="svg/ship.svg" alt="icon">
-                            SHIP
-                        </button>
+                        <a style="cursor:pointer">
+                            <ul class="list-route-card">
+                                <li>dhaka</li>
+                                <li>Barisalr</li>
+                            </ul>
+                        </a>
                     </li>
                     <li>
-                        <button style="font-weight:bold">
-                            <img src="svg/hotel.svg" alt="icon">
-                            HOTEL
-                        </button>
+                        <a style="cursor:pointer">
+                            <ul class="list-route-card">
+                                <li>dhaka</li>
+                                <li>Rajshahi</li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a style="cursor:pointer">
+                            <ul class="list-route-card">
+                                <li>Barisal</li>
+                                <li>Rajshahi</li>
+                            </ul>
+                        </a>
                     </li>
                 </ul>
-                <div class="bdt-search-wrapper">
-                    <div class="bdt-search-form">
-                        <div class="bdt-input-wrapper bdt-input-group has-btn-swipe" style="background: white;">
-                        <div class="bdt-input bdt-has-dropdown false">
-                            <div>
-                                <span class="bdt-input-label">Going From</span>
-                                <span class="bdt-input-value">Dhaka</span>
-                            </div>
-                            <div class="bdt-dropdown bdt-dropdown-search">
-                                <div class="bdt-dropdown-header">
-                                    <div class="position-relative">
-                                        <button class="bdt-search-btn"></button>
-                                        <button class="bdt-back-btn"></button>
-                                        <input type="text" placeholder="Search by City" value="">
-                                        <button class="bdt-close-btn"></button>
-                                    </div>
-                                </div>
-                                <div class="bdt-dropdown-body">
-                                    <ul class="bdt-search-list">
-                                        <li>
-                                            <div>
-                                                <span class="bdt-value">DHAKA</span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <span class="bdt-value">RAJSHAHI</span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <span class="bdt-value">CHITTAGONG</span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <span class="bdt-value">BARISAL</span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="bdt-input bdt-has-dropdown false">
-                            <div>
-                                <span class="bdt-input-label">Going To</span>
-                                <span class="bdt-input-value">Rajshahi</span>
-                            </div>
-                            <div class="bdt-dropdown bdt-dropdown-search">
-                                <div class="bdt-dropdown-header">
-                                    <div class="position-relative">
-                                        <button class="bdt-search-btn"></button>
-                                        <button class="bdt-back-btn"></button>
-                                        <input type="text" placeholder="Search by City" value="">
-                                        <button class="bdt-close-btn"></button>
-                                    </div>
-                                </div>
-                                <div class="bdt-dropdown-body">
-                                    <ul class="bdt-search-list">
-                                        <li>
-                                            <div>
-                                                <span class="bdt-value">DHAKA</span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <span class="bdt-value">RAJSHAHI</span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <span class="bdt-value">CHITTAGONG</span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <span class="bdt-value">BARISAL</span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <button class="btn-swipe">
-                            
-                            <img src="svg/swip.svg" alt="icon">
-                        </button>
-                        </div>
-                        <div class="bdt-input-wrapper bdt-input-group bdt-date-picker has-disabled-input bdt-input-lg">
-                            <div class="ant-picker ant-picker-range">
-                                <div class="ant-picker-input ant-picker-input-active">
-                                    <input readonly="" value="" placeholder="Select date" size="12" autocomplete="off">
-                                </div>
-                                <div class="ant-picker-range-separator">
-                                    <span aria-label="to" class="ant-picker-separator">
-                                        <span role="img" aria-label="swap-right" class="anticon anticon-swap-right"></span>
-                                    </span>
-                                </div>
-                                <div class="ant-picker-input">
-                                    <input disabled="" readonly="" value="" placeholder="Select date" size="12" autocomplete="off">
-                                </div>
-                                <div class="ant-picker-active-bar" style="left: 0px; width: 238px; position: absolute;"></div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
+                <div class="bdt-search-submit">
+                  <button
+                    type="submit"
+                    class="btn btn-primary capitalize fw-bold"
+                    onClick={handleSubmit}
+                  >
+                    search bus
+                  </button>
+                </div>
+              </div>
             </div>
-        </section>
-    </div>
-
-
-    <script src="app.js"></script>
+          </section>
+        </div>
+      </div>
 </body>
 </html>
